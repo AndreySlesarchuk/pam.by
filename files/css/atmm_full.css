@@ -1,0 +1,314 @@
+ar/* ATMM Group -= 20.04.2016 =-
+
+/* Image from the pop-up title*/
+.atmm-image {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.atmm-image img {
+    display: block;
+}
+.atmm-image .atmm-image-caption {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    font: 16px/16px Tahoma, sans-serif;
+}
+.atmm-image .atmm-image-caption {
+    transition: all .5s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+.atmm-image:hover .atmm-image-caption {
+    opacity: 1;
+    visibility: visible;
+
+}
+.atmm-image-r:hover {
+-moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+}
+
+
+/*
+.image {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.image img {
+    display: block;
+}
+
+.image .caption {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    font: 11px/16px Tahoma, sans-serif;
+}
+*/
+
+
+.table-price {
+    /* width: 620pt; */
+    font-family:Colibri;
+    width: 100%; 
+    font-size:12pt;
+    font-weight:normal;
+    font-style:normal;
+    text-align:justify;
+    vertical-align:middle;
+    white-space:normal;
+}
+
+TABLE {
+    color: white;
+    width: 100%; /* Ширина таблицы */
+    border: 3px solid whitesmoke; /* Рамка вокруг таблицы */
+}
+TD, TH {
+    text-align: center; /* Выравнивание по центру */
+    padding: 3px; /* Поля вокруг текста */
+}
+TH {
+    color: white; /* Цвет текста */
+    background: #daa520;  /* Цвет фона */
+}
+TD {
+    border-left: 3px solid whitesmoke; /* Линия слева от ячейки */
+}
+.even { /* Стиль для четных колонок */
+    background: #dcdcdc;  /* Цвет фона */
+}
+.lc { /* Стиль для первой колонки */
+    text-align: left; /* Выравнивание по левому краю */
+    border: none; /* Нет лишних линий */
+}
+
+.atmm-menu-text{
+    font-size:15pt;
+    font-weight:normal;
+    font-style:normal;
+    font-family:Colibri;
+
+}
+
+.atmm-p-text {
+    text-indent: 30px;
+    text-align: justify;
+    font-size:15pt;
+    font-weight: bold;
+    font-style:normal;
+    font-family:Colibri;
+}
+
+.atmm-contacts {
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+    font-size:10pt;
+    color: white;
+
+}
+.atmm-contact {
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+    font-size:10pt;
+    color: white;
+    /*visibility: hidden;*/
+}
+
+.atmm-footer {
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+    font-size:10pt;
+    color: white;
+
+}
+
+
+
+.member-item {
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */;
+}
+
+.member-item .thumb {
+    width: 100%;
+    overflow: hidden;
+}
+
+.member-item .thumb img {
+    width: 100%;
+}
+
+.member-item h4 {
+    margin: 20px 0 10px 0;
+}
+
+.member-item span {
+    text-transform: uppercase;
+    color: #d8aa46;
+    font-weight: 600;
+}
+
+.wrap{
+    display: none;
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+    background-color: rgba(1, 1, 1, 0.725);
+    z-index: 100;
+    overflow: auto;
+}
+
+.window{
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    display: none;
+    background: #fff;
+    z-index: 200;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+}
+
+.close{
+    margin-left: 364px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.atmm-parent_popup_gs{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 240px;
+    height: 480px;
+    background-color: #FFF9AE;
+    z-index: 100;
+    display: none;
+    text-align: center;
+
+}
+.atmm-parent_popup_et{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 240px;
+    height: 480px;
+    background-color: #FFF9AE;
+    z-index: 100;
+    display: none;
+    text-align: center;
+
+}
+.atmm-parent_popup_vl{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 240px;
+    height: 480px;
+    background-color: #FFF9AE;
+    z-index: 100;
+    display: none;
+    text-align: center;
+
+}
+.atmm-parent_popup_ved{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 720px;
+    height: 480px;
+    background-color: #FFF9AE;
+    z-index: 100;
+    display: none;
+    text-align: center;
+
+ }
+.atmm-parent_popup_as {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 240px;
+    height: 480px;
+    background-color: #FFF9AE;
+    z-index: 100;
+    display: none;
+    text-align: center;
+}
+.atmm-popup {
+
+    position: fixed;
+    top: 100px;
+    left: 40%;
+    z-index: 200;
+}
+
+.atmm-contact-box {
+    position: absolute;
+    border: 1px solid #000;
+    width: 620px;
+    height: 230px;
+    top: 45px;
+    left: 15px;
+    display: none;
+    z-index: 1;
+}
+
+/*----------------------------------- c 01.07.2016 -------------------------------------*/
+.atmm-brand_name {
+  display: block;
+  font-weight: bold;
+  margin-top: auto;
+  text-align: center;
+}
+
+.atmm-header {
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+.atmm-p-text{
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 15pt;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Colibri;
+}
