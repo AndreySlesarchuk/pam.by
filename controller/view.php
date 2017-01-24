@@ -23,13 +23,12 @@ class view extends ACore {
 
 		//echo '<div id="main">';
 		
-		//if(!$_GET['id_text']) {
-		//	echo 'Не правильные данные для вывода статьи';
-		//}
-		//else {
-			//$id_text = (int)$_GET['id_text'];
-            $id_text = $this->id_text;
-            if(!$id_text) {
+		if(!$_GET['id_text']) {
+			echo 'Не правильные данные для вывода статьи';
+		}
+		else {
+			$id_text = (int)$_GET['id_text'];
+			if(!$id_text) {
 				echo 'Не правильные данные для вывода статьи';
 			}
 			else {
@@ -47,7 +46,7 @@ class view extends ACore {
 						<p>%s</p>"
                     ,$row['title'],$row['text']);
 			}
-		//}
+		}
 		echo '</div>
 			</div></section>';
 	}

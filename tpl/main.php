@@ -2,7 +2,7 @@
         class="mbr-figure mbr-figure--wysiwyg mbr-figure--full-width mbr-figure--caption-inside-bottom mbr-after-navbar atmm-bgs"
         id="image1-4">
 
-    <div>
+    <div onclick="vid_play_pause()">
         <video style="width: 100%; height: 100%;" id="myvideo" autoplay="false" loop="true"
                poster="./files/video/pam.png">
             <source src="./files/video/pam.mp4" type="video/mp4">

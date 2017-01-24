@@ -2,9 +2,6 @@
 abstract class ACore {
 
     public $page_title = "Парк Авеню Моторс";
-    public $page_name;
-    public $id_text;
-
 	protected $m;
 	
 	public function __construct() {

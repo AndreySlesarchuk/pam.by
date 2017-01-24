@@ -6,7 +6,7 @@
             <div class="mbr-navbar__container">
                 <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand btn">
                         <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
-                        <span class="mbr-brand__logo"><a href="#"><img
+                        <span class="mbr-brand__logo"><a href="index.php"><img
                                         class="mbr-navbar__brand-img mbr-brand__img" src="./files/images/pam-logo.png"
                                         alt="Park Avenue Motors"></a></span>
                         <span class="mbr-brand__name">
