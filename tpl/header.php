@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="http://pam.by/" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <link rel="shortcut icon" href="files/images/pam-logo.png" type="image/x-icon">
+    <meta name="keywords" content="<? echo $this->page_keywords; ?>"/>
+    <meta name="description" content="<? echo $this->page_description; ?>"/>
+    <title><? echo $this->page_title_full; ?></title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="yandex-verification" content="ac36f4cad9a30ad9"/>
     <meta name="msvalidate.01" content="7962172EF8B2C87B6CC316720A1A0B29"/>
     <meta name='wmail-verification' content='7b1051afecc5161355679d047736e24b'/>
 
-    <link rel="shortcut icon" href="files/images/pam-logo.png" type="image/x-icon">
-    <meta name="description"
-          content="Парк Авеню Моторс. Таможенная логистика. Минск.">
-    <title><? echo $page_title; ?></title>
-
-    <link type="text/css" rel="stylesheet" href="files/bootstrap/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="files/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="files/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="files/css/atmm.css">
     <link rel="stylesheet" href="files/css/atmm_full.css">
     <link rel="stylesheet" href="files/css/mbr.css">
-
 
     <!-- RedHelper -->
     <script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async"
