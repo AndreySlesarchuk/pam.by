@@ -20,7 +20,7 @@
                     <div style='margin:2%;border-bottom:2px solid #c2c2c2; color: whitesmoke;'>
                         <p style='font-size:18px; color: limegreen;'><?php echo $row['title']?></p>
                         <p style="text-align: justify"> <?php echo $row['description']?></p>
-                        <p><a style='color:cyan' href='?p=view&id_text=<?php echo $row['id']?>'>Читать далее...</a></p>
+                        <p><a style='color:cyan' href='view/<?php echo $row['id']?>/'>Читать далее...</a></p>
 
                     </div>
                 <?php endforeach;?>

@@ -1,6 +1,6 @@
 <?php
 class agent extends ACore {
-	
+
 	public $page_title = 'Таможенный представитель';
 
     public $page_title_full = "Таможенный представитель Парк Авеню Моторс";

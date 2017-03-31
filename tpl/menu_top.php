@@ -23,7 +23,7 @@
                     mbr-buttons--right btn-decorator mbr-buttons--active">
                                 <?php foreach ($menu_top as $item) : ?>
                                     <li class='mbr-navbar__item'><a class='mbr-buttons__link btn text-white atmm-image'
-                                                                    href='<?php echo $item['name_menu'] ?>'>
+                                                                    href='<?php echo $item['name_menu'] ?>/'>
                                             <img src=<?php echo $item['img_src'] ?>>
                                             <div class='atmm-image-caption'><?php echo $item['text_menu'] ?></div>
                                         </a></li>
