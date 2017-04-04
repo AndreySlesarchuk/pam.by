@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <base href="http://pam.by/" />
+    <base href="https://pam.by" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="robots" content="INDEX,FOLLOW" />
     <link rel="shortcut icon" href="files/images/pam-logo.png" type="image/x-icon">

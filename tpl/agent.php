@@ -50,11 +50,7 @@
                 <?php
                 include('./files/upload/price_pam.html');
                 ?>
-                <!--
-                <iframe src="https://docs.google.com/spreadsheets/d/1Ta0JHmqjE8rd0Xu0aiDx2TVN2EerbgayTpKdMxf_qwo/pubhtml?gid=1739974417&amp;single=true&amp;widget=true&amp;headers=false"
-                        width="800" height="720" frameborder="0" allowfullscreen
-                > -->
-
+                
                 </iframe>
             </div>
         </div>

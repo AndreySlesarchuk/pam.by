@@ -15,27 +15,80 @@ function __autoload($c)
 }
 
 // Заголовок базовый
-$headerStandard = 'Location:http://pam.by';
+$headerStandard = 'Location:https://www.pam.by';
 // Получаем массив данных из заголовка пришедшего
 $result = parse_url($_SERVER['REQUEST_URI']);
 // Извлекаем путь
-$rp = $_SERVER['REQUEST_URI'];
+$path = $result['path'];
+$url = $_SERVER['REQUEST_URI'];
+$query = $_SERVER['QUERY_STRING'];
+$pageArray = array('agent', 'operator', 'store', 'info', 'main', 'view');
 
-// Проверяем последний символ в строке пути
-// если нет / - то добавим и изменим header
-if ($rp[strlen($rp) - 1] != '/') {
-    $header = $headerStandard . $rp . '/';
+// Лишние слэши поудаляем
+$mystring = $url;
+$findme = '//';
+$pos = strpos($mystring, $findme);
+
+// Заметьте, что используется !==.  Использование != не даст верного 
+// результата, так как '/' может находится в нулевой позиции.
+if ($pos !== false) {
+    while ($pos !== false) {
+        $newphrase = str_replace($findme, "/", $mystring);
+        $mystring = $newphrase;
+        $pos = strpos($mystring, $findme);
+    }
+    $url = $mystring;
+    $header = $headerStandard . $url;
+    header($header);
+    //exit();
+}
+
+// Проверяем протокол подключения
+// если HTTP - то переподключаемся как надо
+if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') { //HTTPS
+
+} else { //HTTP
+    $header = $headerStandard . $url;
     header($header);
     exit();
 }
 
-// Режем на путь на части
-$pie = explode("/", $result[path]);
+//Если есть параметр 'P' (старая версия)
+if ($_GET['p']) {
+    $page = preg_replace("#/$#", "", $_GET['p']);
+    if (in_array($page, $pageArray)) {
+        $header = $headerStandard . '/' . $page . '/';
+        if ($page == 'view') {
+            $text = preg_replace("#/$#", "", $_GET['id_text']);
+            $header = $header . $text . '/';
+        }
+        if ($page == 'main') { //Обработка возврата на главную на потом
+            $header = $headerStandard;
+        }
+    } else {
+        $header = $headerStandard;
+    }
+    header($header);
+    exit();
+}
 
+// Проверяем последний символ в строке пути
+// если нет / - то добавим и изменим header
+if ($url[strlen($url) - 1] != '/') {
+    $header = $headerStandard . $url . '/';
+    header($header);
+    exit();
+}
+
+// Режем путь на части
+$pie = explode("/", $path);
 // Проверяем части при необходимости
 //for ($i = 0; $i < count($pie); $i++)
-//    echo "--> ".$i. "---" . $pie[$i] . "<br>\n"; // piece0/
-//echo "---P--->".$_GET['p']."<br>\n";
+//    echo "-----> " . $i . "--->" . $pie[$i] . "<br>\n"; // piece0/
+//echo "---P--->" . $page . "<br>\n";
+//echo "---path--- " . $path . "----<br>\n";
+//echo "---REQEST_URI--- " . $url . "----<br>\n";
+//echo "---QUERY_STRING--- " . $query . "----<br>\n";
 
 // Выбираем необходимые страницы и меняем заголовки при необходимости
 // Класс(Начальная страница) - по умолчанию - main

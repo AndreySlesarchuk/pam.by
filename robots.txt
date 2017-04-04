@@ -4,4 +4,4 @@ Disallow: /files/*
 Disallow: /model/*
 Disallow: /tpl/*
 Host: pam.by
-Sitemap: http://pam.by/sitemap.xml
+Sitemap: https://pam.by/sitemap.xml

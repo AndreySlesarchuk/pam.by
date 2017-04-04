@@ -16,7 +16,7 @@
                 <br> EU: <a class="text-white" href="tel:+37052078506">+370 52 078 506</a>
         </div> <!-- /.col-md-2 -->
         <div class="col-md-4 col-sm-2">
-            <a href="http://www.visitormap.org/" target="_blank">
+            <a href="https://www.visitormap.org/" target="_blank">
 <!--                <img
                     src="http://www.visitormap.org/map/m:unwstoyrsxfquvng/s:1/c:ffffff/p:dot/y:0.png"
                     alt="Free Visitor Maps at VisitorMap.org" border="1">--></a>

@@ -3,9 +3,9 @@
         <p class="mbr-footer__copyright"><a style="color: whitesmoke;" href="#" onClick="scroll(0,0); return false"
                                             title="наверх">Copyright (c) 2016 Парк Авеню Моторс.</a>
         <div>
-            <a href="#">
-                <img src="http://counter.co.kz/CounterCoKz?page=www.pam.by&style=odometer_sm&digits=5&start=870"
-                     alt="Счетчик посещений" border=0 width="105" height="20"></a>
+            <!--<a href="#">
+                <img src="https://counter.co.kz/CounterCoKz?page=www.pam.by&style=odometer_sm&digits=5&start=870"
+                     alt="Счетчик посещений" border=0 width="105" height="20"></a> -->
         </div>
         </p>
     </div>
